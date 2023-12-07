@@ -1,0 +1,51 @@
+.section-img{
+    height: 40vh;
+    background-image: url("../assets/img/img-sesion-1.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.section-img-cover{
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.526)
+}
+
+section{
+    margin-top: 20px;
+}
+
+.mision-vision-valores{
+    height: 40vh;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.hover-btn:hover{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+.hover-btn{
+    border-radius: 10px;
+}
+
+.img-fixed {
+    height: 80vh; /* Adjust this value to your desired height */
+    object-fit: cover;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+#carouselExampleSlidesOnly {
+    height: 80vh !important; /* Adjust this value to your desired height */
+}
+   
+  

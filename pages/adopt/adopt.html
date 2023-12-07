@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- GLOBAL STYLE -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <!-- PRIVATE STYLE -->
+    <link rel="stylesheet" href="./adopt.css">
+
+    <title>Refugio Animal- Adoptar</title>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <a class="navbar-brand" href="#">
+            <img src="../../assets/img/logo.png" alt="Logo" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./adopt.html">Adoptar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../donate/donate.html">Donar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about/about.html">Sobre Nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="bg-main">
+        <section class="bg-main-shadow py-5">
+            <div class="container">
+                <h1 class="text-center">Adopta una mascota</h1>
+                <p class="lead text-center">Ayuda a un animal en adopción y dale un hogar lleno de amor.</p>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../../assets/img/dog/dog1.jpg" class="img-fluid img-dog" alt="Imagen de un perro cachorro">
+                        <h2 class="text-center mt-3">Perros</h2>
+                        <p class="text-center">Los perros son animales fieles y cariñosos, perfectos para familias con niños. Hay perros de todas las razas y tamaños, por lo que seguro que encuentras uno que se adapte a tu estilo de vida.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../../assets/img/cat/cat1.jpg" class="img-fluid img-cat" alt="Imagen de un gato">
+                        <h2 class="text-center mt-3">Gatos</h2>
+                        <p class="text-center">Los gatos son animales independientes y curiosos, perfectos para personas que viven solas o que trabajan mucho. Hay gatos de todos los colores y pelajes, por lo que seguro que encuentras uno que te enamore.</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center">¿Cómo adoptar una mascota?</h2>
+                        <p class="text-center">Para adoptar una mascota, debes cumplir con los siguientes requisitos:
+                            <ul>
+                                <li>Ser mayor de edad</li>
+                                <li>Tener un hogar adecuado para la mascota</li>
+                                <li>Tener tiempo y recursos para cuidar de la mascota</li>
+                            </ul>
+                            <span>Si cumples con estos requisitos, puedes ponerte en contacto con nosotros para comenzar el proceso de adopción.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-subtle d-flex flex-wrap justify-content-between align-items-center py-3 px-5">
+        <div class="col-md-4 mb-0 text-body-secondary text-center w-auto">
+            <span class="text-start">© 2023 Fundación Rescate Caninos & Felinos</span>
+            <br>
+            <span>(F.R.C.F)</span>
+        </div>
+        
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="../../index.html" class="nav-link px-2 text-body-secondary hover-btn">Inicio</a></li>
+            <li class="nav-item"><a href="./adopt.html" class="nav-link px-2 text-body-secondary hover-btn">Adoptar</a></li>
+            <li class="nav-item"><a href="../donate/donate.html" class="nav-link px-2 text-body-secondary hover-btn">Donar</a></li>
+            <li class="nav-item"><a href="../about/about.html" class="nav-link px-2 text-body-secondary hover-btn">Sobre Nosotros</a></li>
+        </ul>
+    </footer>
+
+    <!-- Bootstrap JS y jQuery (al final del body) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!--GLOBAL JAVASCRIPT -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

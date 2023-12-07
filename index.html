@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- GLOBAL STYLE -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <title>Refugio Animal- Inicio</title>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="Logo" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/adopt/adopt.html">Adoptar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/donate/donate.html">Donar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/about/about.html">Sobre Nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carrusel de Imágenes -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="max-width: 80%; margin: auto;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img/img1.jpeg" class="d-block w-100 img-fluid img-fixed" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/img2.webp" class="d-block w-100 img-fluid img-fixed" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/img3.webp" class="d-block w-100 img-fluid img-fixed" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/img4.jpg" class="d-block w-100 img-fluid img-fixed" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/img5.jpg" class="d-block w-100 img-fluid img-fixed" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrusel JS sin jQuery -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Inicia el carrusel
+            var carousel = new bootstrap.Carousel(document.querySelector('.carousel'));
+
+            // Configura la rotación automática cada 5 segundos (ajusta el tiempo según sea necesario)
+            setInterval(function(){
+                carousel.next();
+            }, 5000);
+        });
+    </script>
+
+    <main>
+        <section class="row my-4 mision-vision-valores ps-3">
+            <div class="col bg-primary-subtle d-flex flex-column ">
+                <h2 class="text-center mt-3">Misión</h2>
+                <p class="text-justify my-auto">Nuestra misión es rescatar, cuidar y proteger a los animales callejeros de las adversidades de la calle. También, brindar un buen servicio y seguimiento a quienes vayan a adoptar a nuestros amigos peludos.</p>
+            </div>
+            <div class="col bg-warning-subtle d-flex flex-column">
+                <h2 class="text-center mt-3">Visión</h2>
+                <p class="text-justify my-auto">Ser un refugio que brinde bienestar integral a los animales y provea las herramientas y espacios educativos necesarios para evitar el maltrato y abandono de los animales en general.</p>
+            </div>
+            <div class="col bg-info-subtle d-flex flex-column">
+                <h2 class="text-center mt-3">Valores</h2>
+                <div class="row my-auto">
+                    <div class="col">
+                        <ul>
+                            <li>Calidad</li>
+                            <li>Respeto</li>
+                            <li>Compromiso</li>
+                            <li>Pasión</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>Equidad</li>
+                            <li>Servicio al cliente</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Responsabilidad social</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-img my-4">
+            <div class="section-img-cover d-flex flex-column">
+                <h2 class="text-center text-light mt-3">Resultado esperado</h2>
+                <p class="text-light text-justify w-50 mx-auto my-auto">Crear un refugio para esos animales, donde serán cuidados y protegidos. Esto lo haremos para evitar accidentes, maltratos, que las calles estén sucias de sus necesidades, quejas de vecinos y enfermedades, como por ejemplo: la rabia.</p>
+            </div>
+        </section>
+
+        <section class="bg-dark  mt-4 text-center">
+            <h2 class="text-center text-light">Colaboradores</h2>
+            <img class="img-fluid w-25" src="./assets/img/team/me.png" alt="Colaboradores">
+        </section>
+
+    </main>
+
+    <footer class="bg-dark-subtle d-flex flex-wrap justify-content-between align-items-center py-3 px-5">
+        <div class="col-md-4 mb-0 text-body-secondary text-center w-auto">
+            <span class="text-start">© 2023 Fundación Rescate Caninos & Felinos</span>
+            <br>
+            <span>(F.R.C.F)</span>
+        </div>
+        
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary hover-btn">Inicio</a></li>
+            <li class="nav-item"><a href="./pages/adopt/adopt.html" class="nav-link px-2 text-body-secondary hover-btn">Adoptar</a></li>
+            <li class="nav-item"><a href="./pages/donate/donate.html" class="nav-link px-2 text-body-secondary hover-btn">Donar</a></li>
+            <li class="nav-item"><a href="./pages/about/about.html" class="nav-link px-2 text-body-secondary hover-btn">Sobre Nosotros</a></li>
+        </ul>
+    </footer>
+
+    <!-- Bootstrap JS y jQuery (al final del body) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!--GLOBAL JAVASCRIPT -->
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
